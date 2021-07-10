@@ -35,7 +35,7 @@
     </div>
     <script src="js/extention/choices.js"></script>
     <script>
-      $(document).read(function(){
+      $(document).ready(function(){
         $("btnsearch").click(function(){
         var searchValue = $('#choices-text-preset-values').value;
         $.get("https://api.spoonacular.com/food/wine/dishes?wine="+searchValue+"", function(data, status){
