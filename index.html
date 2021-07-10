@@ -37,8 +37,10 @@
     <script>
       $(document).ready(function(){
         $("btnsearch").click(function(){
+
         var searchValue = $('#choices-text-preset-values').value;
-        $.get("https://api.spoonacular.com/food/wine/dishes?wine="+searchValue+"", function(data, status){
+        $.get("https://api.spoonacular.com/food/wine/dishes??apiKey=dd03bb3bb9334c96afa0e917f5c47980&wine="+searchValue+"", function(data, status){
+
           console.log("Data: " + data + "\nStatus: " + status);
         });
       });
